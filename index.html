@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form class="js-form d-flex justify-content-center gap-2 mt-3 pb-4 " action="">
+            <input class="style-input js-input w-50 p-2" type="search" placeholder="Enter search movies">
+            <button class="style-btn js-btn">Send</button>
+        </form>
+        <select class="select-style select-js w-50 p-2 d-block mx-auto mb-3" name="" id="">
+            <option value="All">All</option>
+            <option value="movie">movies</option>
+            <option value="series">series</option>
+            <option value="episode">episode</option>
+        </select>
+
+
+
+        <!-- <ul class="search__list d-flex justify-content-center align-items-center
+        gap-3  list-unstyled">
+            <li class="search__item">
+                <button class="style__type-btn search__btn p-2">series</button>
+            </li>
+            <li class="search__item">
+                <button class="style__type-btn search__btn p-2">episode</button>
+            </li>
+            <li class="search__item">
+                <button class="style__type-btn search__btn p-2">movies</button>
+            </li>
+        </ul> -->
+        <ul class="js-list list-unstyled d-flex justify-content-between align-items-center flex-wrap gap-5"></ul>
+    </div>
+    <template class="js-template">
+        <li class="style-item js-item p-2">
+        <img class="style-img item-img mb-3" src="" alt="">
+            <h3 class=" style-title item-title fs-5 text-center"></h3>
+            <span class="style-text item-type d-block text-center"></span>
+            <p class="style-year item-year text-center"></p>
+            <a class="style-link item-link d-block text-center" href="#">To watch the movie</a>
+        </li>
+    </template>
+    <script src="./main.js"></script>
+
+</body>
+</html>
